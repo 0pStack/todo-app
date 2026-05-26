@@ -1,26 +1,79 @@
-# Todo App - JavaScript Assignment
+# Todo App (Inköpslista)
 
-This project was developed as part of a JavaScript course at Medieinstitutet. The goal of the assignment was to build a simple todo application with a focus on **data persistence**, **error handling**, and **code improvement (refactoring)**.
+A simple, lightweight shopping list / todo application built with vanilla HTML, CSS, and JavaScript. Items are persisted in the browser via `localStorage`, so your list survives page reloads.
 
-## Features & Functionality
+This project was developed as part of a JavaScript course at Medieinstitutet with a focus on **data persistence**, **error handling**, and **refactoring**.
 
-1. **Persistent Storage**  
-   - All added items are saved in `localStorage`, allowing users to reopen the application and retrieve previously saved items.
+## Features
 
-2. **Error Handling**  
-   - Users are notified if they attempt to add an item without filling in the input field.  
-   - Users are also alerted if they try to add a duplicate item to the list.
+- **Add items** to your shopping list with a single click or `Enter` keypress.
+- **Edit items** inline by clicking on any item in the list.
+- **Delete individual items** using the trash icon next to each entry.
+- **Clear the entire list** with the "Töm allt" button (only visible when the list contains items).
+- **Filter / search** items in real time using the search field.
+- **Persistent storage** via `localStorage` — your list is restored automatically on page reload.
+- **Validation & error handling**:
+  - Empty submissions trigger a modal warning.
+  - Duplicate entries are rejected with a clear message.
+- **Auto-cleanup** of the `localStorage` key when the list becomes empty.
 
-3. **Code Refactoring & Improvement**  
-   - The code has been structured and cleaned up to improve readability, maintainability, and overall quality.
+## Tech Stack
 
-## Assignment Tasks (Completed)
+- **HTML5** — semantic markup
+- **CSS3** — custom styling in `site.css`
+- **Vanilla JavaScript (ES6+)** — no frameworks or build tools
+- **localStorage API** — client-side persistence
+- **Ionicons** — icon set loaded via CDN
 
-- Implemented the remaining `localStorage` logic in `app.js`.  
-- Displayed the **Clear All** button only when there are items in the list.  
-- Fixed the bug that occurred when clicking on an empty list.  
-- Bonus: Automatically removed the `localStorage` key when all items were deleted manually.
+## Project Structure
 
-## Bonus Features
+```
+todo-app/
+├── index.html      # Markup and script loading
+├── site.css        # Styles
+├── app.js          # App logic, event handlers, init
+├── dom.js          # DOM element creation helpers
+├── storage.js      # localStorage read/write utilities
+└── images/         # Logos used in the header
+```
 
-- Ensures that `localStorage` is cleaned up if the list becomes empty, keeping the application data consistent.
+## Getting Started
+
+No build step or dependencies required.
+
+### Option 1: Open directly
+
+Clone the repo and open `index.html` in your browser:
+
+```bash
+git clone https://github.com/0pFlow/todo-app.git
+cd todo-app
+```
+
+Then double-click `index.html` or open it via your browser's File menu.
+
+### Option 2: Run a local server (recommended)
+
+Some browsers restrict `localStorage` and module loading on `file://` URLs. Serving the files over HTTP avoids these issues.
+
+Using Python:
+
+```bash
+python -m http.server 8000
+```
+
+Using Node.js (`npx`):
+
+```bash
+npx serve .
+```
+
+Then open <http://localhost:8000> in your browser.
+
+## Live Demo
+
+_Coming soon._ <!-- Add your deployed URL here (GitHub Pages, Netlify, Vercel, etc.) -->
+
+## License
+
+This project was created for educational purposes as part of a course assignment.
