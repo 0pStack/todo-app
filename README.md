@@ -3,8 +3,8 @@
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)
-[![Stars](https://img.shields.io/github/stars/0pFlow/todo-app?style=flat)](https://github.com/0pFlow/todo-app/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/0pFlow/todo-app)](https://github.com/0pFlow/todo-app/commits/main)
+[![Stars](https://img.shields.io/github/stars/0pStack/todo-app?style=flat)](https://github.com/0pStack/todo-app/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/0pStack/todo-app)](https://github.com/0pStack/todo-app/commits/main)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 A simple, lightweight shopping list / todo application built with vanilla HTML, CSS, and JavaScript. Items are persisted in the browser via `localStorage`, so your list survives page reloads.
@@ -53,7 +53,7 @@ No build step or dependencies required.
 Clone the repo and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/0pFlow/todo-app.git
+git clone https://github.com/0pStack/todo-app.git
 cd todo-app
 ```
 
